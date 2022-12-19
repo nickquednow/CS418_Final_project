@@ -1,0 +1,19 @@
+*{
+    background-color: #A0A0A0;
+}
+div#editMenu{
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000D0;
+}
+div#editMenu div#innerContent{
+    margin: auto;
+    width: 25vw;
+    height: 80vh;
+    border: #707070FF 5px solid;
+    background-color: #FFFFFFFF;
+}

@@ -1,0 +1,18 @@
+[mysql_admin_login]
+    username = "" #This is for the admin credentials that can create databases and such
+    password = ""
+    host = ""
+    port = 3306
+
+[mysql_new_user]
+    username = "school"
+    password = "school"
+    host = "localhost"
+    port = 3306
+    exists = false
+
+[file_locations]
+    mapViewJSON = "data/MAP_VIEW.json"
+    AISPositionReports = "data/POSITION_REPORT_1000000_rows.csv"
+    AISStaticReports = "data/STATIC_DATA_1000000_rows.csv"
+    AISMetaData = "data/AIS_MESSAGE_1000000_rows.csv"

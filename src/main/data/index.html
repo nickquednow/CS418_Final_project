@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>Documentation builder</title>
+    <script src="callers.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body style="padding:0px;margin:0px;overflow:hidden" onload="onLoad()">
+    <svg style="width:100vw;height:100vh" viewBox="0 0 5 6" id="user_window">
+        <style>
+            :root {
+                --background-color: #FFFFFF;
+                --stroke-color: #000000FF;
+            }
+
+            .title {
+                font-size: 0.2px;
+                font-weight: bold;
+                font-family: 'Courier New';
+            }
+
+            .content {
+                font-size: 0.15px;
+                font-family: 'Courier New';
+            }
+
+            .noselect {
+                -webkit-touch-callout: none;
+                /* iOS Safari */
+                -webkit-user-select: none;
+                /* Safari */
+                -khtml-user-select: none;
+                /* Konqueror HTML */
+                -moz-user-select: none;
+                /* Old versions of Firefox */
+                -ms-user-select: none;
+                /* Internet Explorer/Edge */
+                user-select: none;
+                /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+            }
+
+            .centeralign {
+                text-align: center
+            }
+        </style>
+        <text x="0.01" y="1" style="font:0.1px sans-serif;">Use mouse wheel to scroll</text>
+        <text x="0.01" y="1.2" style="font:0.1px sans-serif;">Click and drag mouse to begin</text>
+        <g id="positionMarker">
+            <!-- <polygon fill="red" points="0,-0.5 0.5,0.5 0,0.3 -0.5,0.5" transform="translate(0,0) scale(0.25,0.25) rotate(0)"/> -->
+            <polygon fill="red" points="0,-0.5 0.5,0.5 0,0.3 -0.5,0.5"/>
+        </g>
+    </svg>
+    <div id="editMenu">
+    <div id="innerContent">
+    <h2>Choose IMO</h2>
+    <span style="display:none;" id="descriptor">Title:</span><br />
+    <input style="display:none;" type="text" id="title" /><span style="display:none;" id="titleCurrentLength">0</span><span style="display:none;" id="titleMaxLength">14</span><br />
+    <select id="imo">
+    <option value="electrical">Electrical</option>
+    <option value="programming">Programming</option>
+    </select><br /><br />
+    <button onclick="submit_edit_menu()">Submit</button>
+    </div>
+    </div>
+</body>
+</html>

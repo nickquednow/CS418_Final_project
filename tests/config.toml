@@ -1,0 +1,18 @@
+[fail]
+    fail=true
+
+[staticFiles]
+    projectRoot="/home/nickq/Documents/school/computer science/CS418/CS418_semester_project" #where the project lives (aka one folder up)
+    directorySeperator="/" #the character to seperate the directories in the file path (\ on windows and / on everythign else
+    dataDirectory="src/main/data" #should not have to change unless you reorganise the directory structure
+
+[host]
+    domain="" #where to retrieve the files from (Ex example.com), leave localhost unless testing on a remote machine
+    port=8888 #the port to use for testing (useful of you changed it in the config files)
+
+[tests]
+    baseWebserverTest=true #uses test_webserver.py
+
+[debug]
+    debug=false
+    level=0 #based on verbosity, 10 is the most, and 1 is the least, this only applies to the testing scripts
